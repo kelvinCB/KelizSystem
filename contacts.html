@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dockliz</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -45,165 +46,58 @@
         </ul>
     </nav>
 
-    <!-- Carousel -->
-
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-    
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active">
-            <img src="img/Dokliz_baner0.png" alt="Los Angeles" style="width:100%;" style="height: 5px;">
-          </div>
-    
-          <div class="item">
-            <img src="img/banner2.png" alt="Chicago" style="width:100%;" style="height: 5px;">
-          </div>
-        
-          <div class="item">
-            <img src="img/baner1.png" alt="New york" style="width:100%;" style="height: 5px;">
-          </div>
+    <hr class="separator-line">
+<section>
+    <article class="contact-article">
+    <div class="contact-container">
+        <div class="contact-image">
+            <img src="img/banner2.jpg" alt="contact-image" class="principal-image">
         </div>
-    
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-
-    <section>
-<div class="article-titles">
-    <h2>NOTICIAS</h2>
-</div>
-    
-    <div class="article-news">
-        <div class="container-news">
-            <div class="sub-container-news">
-                 <div class="image-news">
-                    <img src="img/correspondencia1.jpg" alt="Escudo_Pie_de_Pagina" class="img-news">
-                 </div>
-                <div class="info-news">
-                    <a href="https://www.rtve.es/noticias/20161115/detenido-cartero-acusado-quedarse-correspondencia-desde-2013/1443931.shtml"><i class="info-title"></i> Detenido un cartero acusado de quedarse con la correspondencia desde 2013</a>
-                    <p class="info-date">Miércoles, 15 Julio 2020</p>
-                    <p class="info-paragraph">Un cartero ha sido detenido en Alicante acusado de un delito de infidelidad en la custodia de documentos por, presuntamente, apoderarse de la correspondencia que le asignaban desde 2013 y que escondía en una caseta abandonada, donde se halló multitud de cartas y paquetería sin repartir.</p>
+        <div class="well-well-sm">
+            <form class="form-background">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Ingrese su nombre" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">
+                                Correo electrónico</label>
+                            <div class="input-group">
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                </span>
+                                <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required="required" /></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">
+                                Motivo</label>
+                            <select id="subject" name="subject" class="form-control" required="required">
+                                <option value="na" selected="">Elija uno:</option>
+                                <option value="service">General Customer Service</option>
+                                <option value="suggestions">Suggestions</option>
+                                <option value="product">Product Support</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">
+                                Mensage</label>
+                            <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+                                placeholder="Mensage"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                            Enviar Mensaje</button>
+                    </div>
                 </div>
-            </div>
-        
-             <div class="sub-container-news">
-                <div class="image-news">
-                    <img src="img/banner2.jpg" alt="Escudo_Pie_de_Pagina" class="img-news">
-                </div>
-                <div class="info-news">
-                    <a href="http://hcdsoluciones.com/crea-cartas-tus-clientes-utilizando-base-datos/"><i class="info-title"></i>Crea cartas para tus clientes utilizando tu base de datos</a>
-                    <p class="info-date">Viernes, 24 Julio 2020</p>
-                    <p class="info-paragraph">Como mencionamos en nuestro articulo “Beneficios de registrar la actividad de tu negocio“, generar una base de datos de las operaciones en la empresa, nos brinda muchas ventajas, hoy te mostraré una manera sencilla de aprovechar tu base de datos de clientes, utilizando como ejemplo la elaboración de una carta de agradecimiento en solo 7 pasos utilizando Microsoft Word y Microsoft Excel que empleas actualmente.</p>
-                </div>    
-             </div>
+            </form>
         </div>
-
-        <div class="container-news">
-             <div class="sub-container-news">
-                <div class="image-news">
-                    <img src="img/correspondencia3.jpg" alt="Escudo_Pie_de_Pagina" class="img-news">
-                </div>
-                <div class="info-news">
-                    <a href="https://www.ocu.org/consumo-familia/derechos-consumidor/informe/servicios-paqueteria-urgente"><i class="info-title"></i>Servicios de paquetería ¿urgente?</a>
-                    <p class="info-date">Viernes, 31 Julio 2020</p>
-                    <p class="info-paragraph">El mecanismo parece sencillo. Preparas el paquete, te pones en contacto con la empresa de paquetería elegida, das la dirección a la que quieres hacer el envío y esperas a que llegue. Esta es la teoría, pero te decimos lo que nos ocurrió en la práctica.</p>
-                </div>    
-             </div>
-
-             <div class="sub-container-news">
-                <div class="image-news">
-                    <img src="img/banner3.jpg" alt="Escudo_Pie_de_Pagina" class="img-news">
-                </div>
-                <div class="info-news">
-                    <a href="https://www.itemformacion.com/administracion-general-y-comercial/2202-gestion-auxiliar-de-la-correspondencia-y-paqueteria-en-la-empresa.html"><i class="info-title"></i>Gestión auxiliar de la correspondencia y paquetería en la empresa</a>
-                    <p class="info-date">Jueves, 16 Julio 2020</p>
-                    <p class="info-paragraph">El procedimiento de evaluación y acreditación de las competencias profesionales adquiridas a través de la experiencia laboral o de vías no formales de formación dispone de una etapa previa consistente en la información y la orientación a todas aquellas personas que lo soliciten.</p>
-                </div>    
-             </div>
-        </div>   
     </div>
-
-    <div class="article-titles">
-        <h2>ENLACES DE INTERÉS</h2>
-    </div>
-
-    <div class="article-videos">
-        <div class="container-videos">
-           
-            <div class="sub-container-videos">
-                <div class="videos-links">
-                    <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/HiNBd6oZ6Ck" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=HiNBd6oZ6Ck"><i class="video-title"></i>FORMATO ÚNICO DE INVENTARIO DOCUMENTAL</a>
-                </div>  
-            </div>
-
-            <div class="sub-container-videos">
-                <div class="videos-links">
-                    <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/qh7XthPxwy8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=qh7XthPxwy8&list=PL0v6afz6ymLX8AYcno5xjlSTfIvkf7Q-q&index=6"><i class="video-title"></i>IDENTIFICACIÓN Y DESCRIPCIÓN</a>
-                </div>  
-            </div>
-        
-             <div class="sub-container-videos">
-                <div class="videos-links">
-                    <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/NvAYvLgjZA4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=NvAYvLgjZA4&list=PL0v6afz6ymLX8AYcno5xjlSTfIvkf7Q-q&index=4"><i class="video-title"></i>DEPURACIÓN</a>
-                </div>    
-             </div>
-             
-        </div> 
-
-        <div class="container-videos">
-           
-            <div class="sub-container-videos">
-                <div class="videos-links">
-                    <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oJ8NzpO3WJU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=oJ8NzpO3WJU&list=PL0v6afz6ymLX8AYcno5xjlSTfIvkf7Q-q&index=3"><i class="video-title"></i>ORDENACIÓN</a>
-                </div>  
-            </div>
-
-            <div class="sub-container-videos">
-                <div class="videos-links">
-                    <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/_AlAzIydvRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=_AlAzIydvRI"><i class="video-title"></i>FOLIACIÓN DE DOCUMENTOS</a>
-                </div>  
-            </div>
-        
-             <div class="sub-container-videos">
-                <div class="videos-links">
-                    <div class="iframe-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4we0_1UHe9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <a href="https://www.youtube.com/watch?v=4we0_1UHe9o&t=1s"><i class="video-title"></i>TRASFERENCIAS PRIMARIAS Y SECUNDARIAS</a>
-                </div>    
-             </div>
-             
-        </div> 
-    </div>
+    </article>
 </section>
 
 <hr class="separator-line">
