@@ -6,6 +6,10 @@ section{
     padding: 10px;
 }
 
+#myCarousel{
+    margin-top: 14px;
+}
+
 .article-titles{
     display: flex;
     justify-content: center;
