@@ -10,7 +10,8 @@
     <!--Commons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" /> 
+
 </head>
 <body>
 
@@ -39,8 +40,8 @@
     <nav>
         <ul>
             <li><a class="item-nav" href="index.html">INICIO</a></li>
-            <li><a class="item-nav" href="services.html">SERVICIOS</a></li>
             <li><a class="item-nav" href="about-us.html">NOSOTROS</a></li>
+            <li><a class="item-nav" href="services.html">SERVICIOS</a></li>
             <li><a class="item-nav" href="transparency.html">TRANSPARENCIA</a></li>
             <li><a class="active" class="item-nav" href="contacts.html">CONTACTOS</a></li>
         </ul>
@@ -75,18 +76,19 @@
                                 Motivo</label>
                             <select id="subject" name="subject" class="form-control" required="required">
                                 <option value="na" selected="">Elija uno:</option>
-                                <option value="service">General Customer Service</option>
-                                <option value="suggestions">Suggestions</option>
-                                <option value="product">Product Support</option>
+                                <option value="service">Asistencia al usuario</option>
+                                <option value="suggestions">Sugerencias</option>
+                                <option value="product">Contacto Empresarial</option>
+                                <option value="other">Otro</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="name">
-                                Mensage</label>
+                                Mensaje</label>
                             <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                placeholder="Mensage"></textarea>
+                                placeholder="Mensaje"></textarea>
                         </div>
                     </div>
                     <div class="col-md-12">
