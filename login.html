@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" /> 
 
+    <!--Login And Register -->
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+
+
 </head>
 
 <body>
@@ -40,6 +48,7 @@
     </header>
 
     <section>
+        <div class="login-register-container">
             <div id="login">
                 <div class="container">
                     <div id="login-row" class="row justify-content-center align-items-center">
@@ -48,19 +57,19 @@
                                 <form id="login-form" class="form" action="" method="post">
                                     <h3 class="text-center text-info">Login</h3>
                                     <div class="form-group">
-                                        <label for="username" class="text-info">Username:</label><br>
-                                        <input type="text" name="username" id="username" class="form-control">
+                                        <label for="username" class="text-info">Usuario:</label><br>
+                                        <input type="text" name="username" id="username" class="form-control" placeholder="Ingrese su usuario">
                                     </div>
                                     <div class="form-group">
-                                        <label for="password" class="text-info">Password:</label><br>
-                                        <input type="text" name="password" id="password" class="form-control">
+                                        <label for="password" class="text-info">Contraseña:</label><br>
+                                        <input type="text" name="password" id="password" class="form-control" placeholder="Ingrese su contraseña">
                                     </div>
                                     <div class="form-group">
-                                        <label for="remember-me" class="text-info"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                                        <input type="submit" name="submit" class="btn btn-info btn-md" value="submit">
+                                        <label for="remember-me" class="text-info"><span>Recordarme</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                        <input type="submit" name="submit" class="btn btn-info btn-md" value="LogIn">
                                     </div>
                                     <div id="register-link" class="text-right">
-                                        <a href="#" class="text-info">Register here</a>
+                                        <a href="register.html" class="text-info">Registrese aquí</a>
                                     </div>
                                 </form>
                             </div>
@@ -68,6 +77,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     </section>
 
     <hr class="separator-line">
