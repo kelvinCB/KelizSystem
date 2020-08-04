@@ -24,11 +24,12 @@ section{
     background: lightblue;
     padding: 4px;
     width: 50%;
-    margin-right: 10px;
+    margin-left: 30px;
 }
 
 .principal-image{
-    width: 100%;
+    width: 80%;
+    margin-left: 40px;
 }
 
 .title-transparency{
