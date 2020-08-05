@@ -1,0 +1,76 @@
+section{
+    
+    min-height: 150vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px; 
+}
+
+.info-usuario{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    margin-bottom: 5px;
+    margin-top: -20px;
+}
+
+.login-usuario a{
+    text-decoration: none;
+    color: black;
+}
+
+.article-services{
+    padding: 4px; 
+    min-height: 145vh; 
+}
+
+.container-service{
+    background: lightblue;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+.service-title{
+    background-color: #d9e4f5;
+    background-image: linear-gradient(315deg, #d9e4f5 0%, #f5e3e6 74%);
+    padding: 4px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.container-sub-services{
+    background: lightblue;
+    padding: 4px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.subcontainer-sub-service{
+    background-color: #89d8d3;
+    background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+    padding: 4px;
+    max-width: 60vh;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.sub-service-title{
+    text-align: center;
+    width: 100%; 
+    padding: 4px;
+}
+.sub-service-title a{
+ text-decoration: none;
+ color: white;
+}
+.sub-service-image{
+    padding: 4px;
+    width: 100%; 
+}
+
+.sub-service-img{
+    padding: 4px;
+    width: 100%;
+    max-height: 35vh;
+}

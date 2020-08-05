@@ -6,20 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dockliz</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/consulta-documentos.css">
 
-     <!--Commons -->
+    <!--Commons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" /> 
-
-    <!--Login And Register -->
-
-    <!-- Google Fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
-
-
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
 
 </head>
 
@@ -32,7 +24,7 @@
                     <a href="index.html"><img src="img/logli.PNG" alt="Logo" class="logo"></a>
                 </div>
                 <div class="busqueda-header">
-                    <img src="https://map.gob.do/transparencia/wp-content/uploads/2018/07/dominicana.svg" alt="República Dominicana" class="rd">
+                    <img src="img/Republica Dominicana.png" alt="República Dominicana" class="rd">
                     <form action="" class="search-box">
                         <input type="text" class="search-txt" placeholder="Ingresa tu búsqueda">
                         <a href="site-map.html"><i class="fa fa-search"></i></a>
@@ -47,38 +39,23 @@
         </div>
     </header>
 
+
+    <hr class="separator-line">
+
     <section>
-        <div class="login-register-container">
-            <div id="login">
-                <div class="container">
-                    <div id="login-row" class="row justify-content-center align-items-center">
-                        <div id="login-column" class="col-md-6">
-                            <div id="login-box" class="col-md-12">
-                                <form id="login-form" class="form" action="" method="post">
-                                    <h3 class="text-center text-info">Iniciar Sesión</h3>
-                                    <div class="form-group">
-                                        <label for="username" class="text-info">Usuario:</label><br>
-                                        <input type="text" name="username" id="username" class="form-control" placeholder="Ingrese su usuario" required="required">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="password" class="text-info">Contraseña:</label><br>
-                                        <input type="password" name="password" id="password" class="form-control" placeholder="Ingrese su contraseña" required="required">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="remember-me" class="text-info"><span>Recordarme</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
-                                        <a href="services-admin.html" type="submit" name="submit" class="btn btn-info btn-md btn btn-primary btn-lg login-button" value="Register">Iniciar Sesión</a>
-                                    </div>
-                                    <div id="register-link" class="text-right">
-                                        <a href="register.html" class="text-info">Registrese aquí</a>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="article-consulta-documentos">
+            <div class="encabezado-table">
+                <h3>Fecha</h3>
+                <h3>Título Documento</h3>
+                <h3>Destinatario</h3>
+                <h3>Correo Destinatario</h3>
+                <h3>Departamento Destino</h3>
+                <h3>Detalle</h3>
+            </div>
+            <div class="contenido-table">
+                <h1>Aqui va todo lo que ha enviado el usuario</h>
             </div>
         </div>
-        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
     </section>
 
     <hr class="separator-line">
@@ -110,8 +87,7 @@
             <div class="right-col">
                 <a
                     href="https://optic.gob.do/nortic/index.php/certificaciones/instituciones-certificadas/item/oficina-presidencial-de-tecnologias-de-la-informacion-y-comunicacion-optic#"><img
-                        src="img/Nortic.png" alt="Nortic" class="nortic">
-                </a>
+                        src="img/Nortic.png" alt="Nortic" class="nortic"></a>
             </div>
         </div>
     </footer>

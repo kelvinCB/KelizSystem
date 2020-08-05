@@ -52,7 +52,7 @@
             <div class="contact-container"> 
                 <div class="well-well-sm">
                     <div class="panel-title text-center" id="title-container">
-                        <h3 class="title">DOCUMENTACIÓN FISICA</h3>
+                        <h3 class="title">DOCUMENTACIÓN ELECTRÓNICA</h3>
                     </div>
                     <form class="form-background">
                         <div class="row">
@@ -90,13 +90,17 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="name">
-                                        Correo del Destinatario</label>
-                                    <input type="email " class="form-control" id="name" placeholder="Ingrese el correo del destinatario" required="required" />
-                                </div>
+                                        Correo del Destinatario
+                                    </label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="Ingrese su correo" required="required" />
+                                    </div></div>
                                 <div class="form-group">
                                     <label for="name">
-                                        Tipo Documento</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Ingrese el tipo de documento" required="required" />
+                                        Adjuntar Archivos</label>
+                                    <input type="file" class="form-control" name = "adjunto" id="archivo-adjunto" required="required" />
                                 </div>
                                 <div class="form-group">
                                     <label for="name">
@@ -107,21 +111,22 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <label for="name">
-                                        Mensaje</label>
+                                        Descripción</label>
                                     <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required"
-                                        placeholder="Mensaje"></textarea>
+                                        placeholder="Descripción del envío"></textarea>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <div class="contact-image">
-                                        <img src="img/correspondencia1.jpg" alt="contact-image" class="principal-image">
+                                        <img src="img/Servicio1.jpeg" alt="contact-image" class="principal-image">
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
-                                    Enviar Correspondencia</button>
+                                    Enviar Correspondencia
+                                </button>
                             </div>
                         </div>
                     </form>

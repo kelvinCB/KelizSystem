@@ -59,3 +59,19 @@ span a:hover{
     font-size: 18px;
 }
     
+.tree{
+    display: flex;
+    justify-content: left;
+}
+.site-map-title{
+    display: flex;
+    justify-content: left;
+}
+.site-map-title h1{
+    padding: 3px;
+    background: lightblue;
+    color: white;
+    width: 20%;
+    margin-left: 10px;
+    text-align: center;
+}

@@ -27,7 +27,7 @@ body {
     color: #000;
 }
 .aboutus-title::after {
-    background: #fdb801 none repeat scroll 0 0;
+    background: lightblue none repeat scroll 0 0;
     bottom: 0;
     content: "";
     height: 2px;
