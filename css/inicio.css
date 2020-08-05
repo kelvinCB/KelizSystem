@@ -31,8 +31,7 @@ section{
 }
 
 .sub-container-news{
-    width: 640px;
-    height: 300px; 
+    width: 100%;
     display: flex;
 }
 
@@ -74,8 +73,7 @@ section{
 }
 
 .sub-container-videos{
-    width: 640px;
-    height: 300px; 
+    width: 100%;
     display: flex;
 }
 
