@@ -1,0 +1,263 @@
+<?php
+if(isset($_POST['insert'])){
+
+    $host = "MYSQL5025.site4now.net";
+    $username = "a658a1_kelvin2";
+    $clave = "Atlassian25";
+    $bd = "db_a658a1_kelvin2";
+
+    $connect = mysqli_connect($host, $username, $clave, $bd);
+
+  $user = $_POST['username'];
+  $nombre = $_POST['nombre'];
+  $apellidos = $_POST['apellidos'];
+  $email = $_POST['email'];
+  $cargo = $_POST['cargo'];
+  $departamento = $_POST['departamento'];
+  $telefono = $_POST['telefono'];
+  $password = $_POST['password'];
+
+
+  $q = "INSERT INTO `usuario`(`user`, `nombre`, `apellido`, `email`, `cargo`, `departamento`, `telefono`, `password`) VALUES ('$username', $nombre, '$apellidos', '$email', '$cargo', '$departamento', '$telefono', '$password')";
+
+  $result = mysqli_query($connect, $q);
+
+ if($result){
+    echo "Datos ingresados correctamente";
+  }else {
+    echo "No se puedieron insertar";
+  }
+
+}
+
+
+  ?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dockliz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/correspondencia-fisica.css">
+
+     <!--Commons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16" />
+
+    <!--Login And Register -->
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="header-subcontainer">
+                <div class="logo-header">
+                    <a href="index.html"><img src="img/logli.PNG" alt="Logo" class="logo"></a>
+                </div>
+                <div class="busqueda-header">
+                    <img src="https://map.gob.do/transparencia/wp-content/uploads/2018/07/dominicana.svg" alt="República Dominicana" class="rd">
+                    <form action="" class="search-box">
+                        <input type="text" class="search-txt" placeholder="Ingresa tu búsqueda">
+                        <a href="site-map.html"><i class="fa fa-search"></i></a>
+                    </form>
+                    <a href="index.html"><i class="text-inicio"></i>INICIO</a>
+                    |
+                    <a href="site-map.html"><i class="text-inicio"></i>MAPA DE SITIO</a>
+                    |
+                    <a href="contacts.html"><i class="text-inicio"></i>CONTACTOS</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+
+        <div class="login-register-container">
+            <div class="contact-container">
+                <div class="well-well-sm">
+                    <div class="panel-title text-center" id="title-container">
+                        <h3 class="title">Registro</h3>
+                    </div>
+                    <form class="form-background" method="POST" action="register.php">
+                        <div class="row">
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label for="name" class="cols-sm-2 control-label">Nombre</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                            <input type="text" method="POST" class="form-control" name="nombre" id="name"  placeholder="Ingrese su nombre" required="required"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="name" class="cols-sm-2 control-label">Apellidos</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                            <input type="text" Method="POST" class="form-control" name="apellidos" id="name" method="POST"  placeholder="Ingrese apellidos" required="required"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="cols-sm-2 control-label">Correo Electrónico</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                            <input type="email" class="form-control" name="email" method="post" id="email"  placeholder="Ingrese su correo" required="required"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="cols-sm-2 control-label">Cargo</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fas fa-address-card" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" method="POST" name="cargo" id="name"  placeholder="Ingrese su cargo" required="required"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="cols-sm-2 control-label">Departamento</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fas fa-building" aria-hidden="true"></i></span>
+                                            <select id="subject" name="departamento" method="post" class="form-control" required="required">
+                                                <option value="na" selected="">Elija Departamento:</option>
+                                                <option value="service">Mesa de Entrada</option>
+                                                <option value="suggestions">Recursos humanos</option>
+                                                <option value="product">Soporte e infraestructura</option>
+                                                <option value="product">Tecnología y Desarrollo</option>
+                                                <option value="product">Mensajería</option>
+                                                <option value="other">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+
+                                <div class="form-group">
+                                    <label for="email" class="cols-sm-2 control-label">Sexo</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fas fa-venus-mars" aria-hidden="true"></i></span>
+                                            <select id="subject" name="Sexo" method="" class="form-control" required="required">
+                                                <option value="na" selected="">Elija Sexo:</option>
+                                                <option value="service">Masculino</option>
+                                                <option value="suggestions">Femenino</option>
+                                                <option value="other">Otro</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email" class="cols-sm-2 control-label">Teléfono</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fas fa-phone-square-alt" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" name="telefono" id="name"  placeholder="Número de contacto" required="required" method="POST"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="username" class="cols-sm-2 control-label">Usuario</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                            <input type="text" class="form-control" method="post" name="username" id="username"  placeholder="Ingrese su usuario" required="required"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="password" class="cols-sm-2 control-label">Contraseña</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                            <input type="password" method="post" class="form-control" name="password" id="password"  placeholder="Ingrese su contraseña" required="required"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="confirm" class="cols-sm-2 control-label">Confirme Contraseña</label>
+                                    <div class="cols-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                            <input type="password" method="post" class="form-control" name="confirmar" id="confirm"  placeholder="Confirme su contraseña" required="required"/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-12">
+                              <input type="submit" name="insert" class="btn btn-primary pull-right" value="Insertar datos">
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    </section>
+
+    <hr class="separator-line">
+
+    <footer>
+        <div class="footer-container">
+            <div class="left-col">
+                <div class="social-media">
+                    <a href="https://www.facebook.com/Keliz-Systems-SRL-101560218308838/?modal=admin_todo_tour"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCMjHDFNsJvXxoatmrP-qAHA"><i
+                            class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/keliz_systems/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="center-col">
+                <img src="img/Escudo.png" alt="Escudo_Pie_de_Pagina" class="escudo-footer">
+                <img src="img/head-logo.PNG" alt="Escudo_Pie_de_Pagina" class="escudo-footer">
+
+                <p class="footer-text">Mercedes Echenique #21, Distrito Nacional, R.D</p>
+                <p class="footer-text">Teléfono: (809) 685-8141 / Fax: (809) 685-0859</p>
+                <p class="footer-text">Términos de uso | Política de Privacidad | Preguntas Frecuentes</p>
+                <p class="footer-text">© 2020 Todos los derechos reservados</p>
+                <p class="footer-text">República Dominicana</p>
+            </div>
+
+            <div class="right-col">
+                <a
+                    href="https://optic.gob.do/nortic/index.php/certificaciones/instituciones-certificadas/item/oficina-presidencial-de-tecnologias-de-la-informacion-y-comunicacion-optic#"><img
+                        src="img/Nortic.png" alt="Nortic" class="nortic">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
